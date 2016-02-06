@@ -14,8 +14,10 @@ Desarrollado por **Luis Borbolla**
 ##Lista de cosas por hacer
 - [x] Diseno de codigo para stepper
 - [x] Diseno de codigo para display LCD
-- [ ] Diseno de CAD para base de Sensor 
+- [ ] Diseno de CAD para base de Sensor
+- [ ] Impresion 3D de base para sensor  
 - [ ] Diseno de codigo para Sensor IR
 - [ ] Integracion de codigo Sensor IR con LCD 
 - [ ] Diseno de codigo de modulo RF
 - [ ] Pruebas gon giro
+
