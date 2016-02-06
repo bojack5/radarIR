@@ -3,6 +3,8 @@ Codigo python para medidor de distacia infrarojo para drones
 
 Desarrollado por **Luis Borbolla**
 
+Email : luis@4suredesign.com
+
 ##Costos de materiales
 
 1. Motor de pasos 28BJY-48 con driver **$1.38**   [ebay](http://www.ebay.com/itm/DC-5V-Stepper-Motor-ULN2003-Driver-Test-Module-Board-28BYJ-48-for-Arduino-/181266971629?hash=item2a345a7bed:g:N2wAAOSwq7JUIT-B)
