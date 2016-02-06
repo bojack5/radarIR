@@ -11,8 +11,11 @@ Desarrollado por **Luis Borbolla**
 4. Convertidor analogo-digital 10CH  HTADCI2C **$2.99**   [hobbytronics](http://www.hobbytronics.co.uk/adc-i2c-slave)
 5. 2 x transceiver de radiofrecuencia **$3.24**   [ebay](http://www.ebay.com/itm/2-4G-NRF24L01-PA-LNA-SMA-Antenna-Wireless-Transceiver-communication-module-New-/131132832737?hash=item1e88203be1:g:0FIAAOxyGwNTFrbL)
 
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+##Lista de cosas por hacer
+- [x] Diseno de codigo para stepper
+- [x] Diseno de codigo para display LCD
+- [ ] Diseno de CAD para base de Sensor 
+- [ ] Diseno de codigo para Sensor IR
+- [ ] Integracion de codigo Sensor IR con LCD 
+- [ ] Diseno de codigo de modulo RF
+- [ ] Pruebas gon giro
