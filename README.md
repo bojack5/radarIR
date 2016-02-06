@@ -11,3 +11,8 @@ Desarrollado por **Luis Borbolla**
 4. Convertidor analogo-digital 10CH  HTADCI2C **$2.99**   [hobbytronics](http://www.hobbytronics.co.uk/adc-i2c-slave)
 5. 2 x transceiver de radiofrecuencia **$3.24**   [ebay](http://www.ebay.com/itm/2-4G-NRF24L01-PA-LNA-SMA-Antenna-Wireless-Transceiver-communication-module-New-/131132832737?hash=item1e88203be1:g:0FIAAOxyGwNTFrbL)
 
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
