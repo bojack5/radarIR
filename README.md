@@ -26,4 +26,8 @@ Display LCD comunicacion i2c | **$7.20** | [ebay](http://www.ebay.com/itm/Blue-S
 - [ ] Diseno de codigo de modulo RF
 - [ ] Pruebas gon giro
 
+def foo():
+    if not bar:
+        return True
+
 
