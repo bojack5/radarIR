@@ -19,6 +19,7 @@ Display LCD comunicacion i2c | **$7.20** | [ebay](http://www.ebay.com/itm/Blue-S
 ##Lista de cosas por hacer
 - [x] Diseno de codigo para stepper
 - [x] Diseno de codigo para display LCD
+- [x] Diseno de CAD de drone
 - [ ] Diseno de CAD para base de Sensor
 - [ ] Impresion 3D de base para sensor  
 - [ ] Diseno de codigo para Sensor IR
