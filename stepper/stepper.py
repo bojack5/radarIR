@@ -139,8 +139,8 @@ class Motor(object):
 
 
 if __name__ == "__main__":
-    GPIO.setmode(GPIO.BOARD)
-    m = Motor([18,22,24,26])
+    GPIO.setmode(GPIO.BCM)
+    m = Motor([24,25,8,7])
     m.rpm = 5
     print "Pause in seconds: " + `m._T`
     m.move_to(90)
