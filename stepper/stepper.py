@@ -65,36 +65,6 @@ class Motor(object):
         GPIO.output(self.P3, 0)
         GPIO.output(self.P4, 0)
 
-    def _move_acw_2(self, big_steps):
-        self.__clear()
-        for i in range(big_steps):
-            GPIO.output(self.P3, 0)
-            GPIO.output(self.P1, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P2, 0)
-            GPIO.output(self.P4, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P1, 0)
-            GPIO.output(self.P3, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P4, 0)
-            GPIO.output(self.P2, 1)
-            sleep(self._T * 2)
-
-    def _move_cw_2(self, big_steps):
-        self.__clear()
-        for i in range(big_steps):
-            GPIO.output(self.P4, 0)
-            GPIO.output(self.P2, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P1, 0)
-            GPIO.output(self.P3, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P2, 0)
-            GPIO.output(self.P4, 1)
-            sleep(self._T * 2)
-            GPIO.output(self.P3, 0)
-            GPIO.output(self.P1, 1)
             sleep(self._T * 2)
 
     def _move_acw_3(self, big_steps):
@@ -119,36 +89,33 @@ class Motor(object):
 
     def _move_cw_3(self, big_steps):
         self.__clear()
-        for i in range(big_steps):
-            GPIO.output(self.P3, 0)
-            sleep(self._T)
-            GPIO.output(self.P1, 1)
-            sleep(self._T)
-            GPIO.output(self.P4, 0)
-            sleep(self._T)
-            GPIO.output(self.P2, 1)
-            sleep(self._T)
-            GPIO.output(self.P1, 0)
-            sleep(self._T)
-            GPIO.output(self.P3, 1)
-            sleep(self._T)
-            GPIO.output(self.P2, 0)
-            sleep(self._T)
-            GPIO.output(self.P4, 1)
-            sleep(self._T)
-
+        try:
+            while True:
+                GPIO.output(self.P3, 0)
+                sleep(self._T/4.)
+                GPIO.output(self.P1, 1)
+                sleep(self._T/4.)
+                GPIO.output(self.P4, 0)
+                sleep(self._T/4.)
+                GPIO.output(self.P2, 1)
+                sleep(self._T/4.)
+                GPIO.output(self.P1, 0)
+                sleep(self._T/4.)
+                GPIO.output(self.P3, 1)
+                sleep(self._T/4.)
+                GPIO.output(self.P2, 0)
+                sleep(self._T/4.)
+                GPIO.output(self.P4, 1)
+                sleep(self._T/4.)
+        except KeyboardInterrupt:
+            print "Secuencia interrumpida por operador!"
+            GPIO.cleanup()
 
 if __name__ == "__main__":
-    GPIO.setmode(GPIO.BOARD)
-    m = Motor([18,22,24,26])
+    GPIO.setmode(GPIO.BCM)
+    m = Motor([24,25,8,7])
     m.rpm = 5
     print "Pause in seconds: " + `m._T`
-    m.move_to(90)
+    m. _move_cw_3(1000)
     sleep(1)
-    m.move_to(0)
-    sleep(1)
-    m.mode = 2
-    m.move_to(90)
-    sleep(1)
-    m.move_to(0)
     GPIO.cleanup()
