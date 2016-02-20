@@ -38,26 +38,7 @@ class Motor(object):
     # behind the scenes it sets the _T attribute
     rpm = property(lambda self: self._rpm, _set_rpm)
 
-    def move_to(self, angle):
-        """Take the shortest route to a particular angle (degrees)."""
-        # Make sure there is a 1:1 mapping between angle and stepper angle
-        target_step_angle = 8 * (int(angle / self.deg_per_step) / 8)
-        steps = target_step_angle - self.step_angle
-        steps = (steps % self.steps_per_rev)
-        if steps > self.steps_per_rev / 2:
-            steps -= self.steps_per_rev
-            print "moving " + `steps` + " steps"
-            if self.mode == 2:
-                self._move_acw_2(-steps / 8)
-            else:
-                self._move_acw_3(-steps / 8)
-        else:
-            print "moving " + `steps` + " steps"
-            if self.mode == 2:
-                self._move_cw_2(steps / 8)
-            else:
-                self._move_cw_3(steps / 8)
-        self.step_angle = target_step_angle
+
 
     def __clear(self):
         GPIO.output(self.P1, 0)
@@ -65,7 +46,7 @@ class Motor(object):
         GPIO.output(self.P3, 0)
         GPIO.output(self.P4, 0)
 
-            sleep(self._T * 2)
+        sleep(self._T * 2)
 
     def _move_acw_3(self, big_steps):
         self.__clear()
