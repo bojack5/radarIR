@@ -19,6 +19,7 @@ Display LCD comunicacion i2c | **$7.20** | [ebay](http://www.ebay.com/itm/Blue-S
 - [x] Diseno de codigo para stepper
 - [x] Diseno de codigo para display LCD
 - [x] Diseno de CAD de drone
+- [ ] Compra de LiDAR Lite V2
 - [ ] Recepcion de sensor
 - [ ] Diseno de CAD para base de Sensor
 - [ ] Impresion 3D de base para sensor  
@@ -27,6 +28,11 @@ Display LCD comunicacion i2c | **$7.20** | [ebay](http://www.ebay.com/itm/Blue-S
 - [ ] Diseno de codigo de modulo RF
 - [ ] Pruebas gon giro
 
+##Comentarios
+
+Actualmente a la fecha 2016.03.18 me encuentro esperando opinion del cliente sobre el Radar laser (LiDAR) que se propone
+ya se nvestigo datasheets , y se esta empezando a realizar programas para manejarlo de acuerdo a registros del datasheet
+es conveniente tener el material para poder realizar pruebas mas rapido ... 
 
 
 
