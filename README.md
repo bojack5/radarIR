@@ -27,12 +27,15 @@ Display LCD comunicacion i2c | **$7.20** | [ebay](http://www.ebay.com/itm/Blue-S
 - [ ] Integracion de codigo Sensor Laser con LCD 
 - [ ] Diseno de codigo de modulo RF
 - [ ] Pruebas gon giro
+- [ ] Prueba demostracion Padre
 
 ##Comentarios
 
 Actualmente a la fecha 2016.03.18 me encuentro esperando opinion del cliente sobre el Radar laser (LiDAR) que se propone
 ya se nvestigo datasheets , y se esta empezando a realizar programas para manejarlo de acuerdo a registros del datasheet
 es conveniente tener el material para poder realizar pruebas mas rapido ... 
+
+shadgjasgdshagdsghjsagdj
 
 
 
